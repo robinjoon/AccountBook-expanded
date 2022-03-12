@@ -6,6 +6,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class Record {
+    private long recordId;
     private String userName;
     private String when;
     private String where;
