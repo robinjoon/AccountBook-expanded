@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public interface RecordManager {
 
-    public void Record(Record record);
+    public void addRecord(Record record);
 
     public Optional<Record> getRecord(int recordId);
 
