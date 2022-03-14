@@ -5,6 +5,7 @@ import space.robinjoon.househole_account_book.model.Statistics;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 public interface YearAccountBook {
     public List<Record> getRecords(Date date);
@@ -15,7 +16,7 @@ public interface YearAccountBook {
 
     public List<Long> getTotalYearNetIncome(Date date);
 
-    public Statistics getYearStatistics(Date date);
+    public Optional<Statistics> getYearStatistics(Date date);
 
     public List<Statistics> getYearStatistics(Date startDate, Date endDate);
 }

@@ -5,6 +5,7 @@ import space.robinjoon.househole_account_book.model.Statistics;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 public interface AssetManager {
     public long getTotalAssetValue();
@@ -13,7 +14,7 @@ public interface AssetManager {
 
     public void addAsset(Asset asset);
 
-    public Asset getAsset(String assetName);
+    public Optional<Asset> getAsset(String assetName);
 
     public List<Asset> getAssets();
 
